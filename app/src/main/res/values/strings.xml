@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Asana Rebel</string>
+    <string name="error_message">Sorry there was an error loading cat facts. Please try again later</string>
+    <string name="title">Cat Facts!</string>
+    <string name="image_description">Image description</string>
+    <string name="share_cat_fact">Share A Cat Fact!</string>
+    <string name="cat_fact_content">Do you want to know a Cat Fact?\n\n%s</string>
+</resources>
