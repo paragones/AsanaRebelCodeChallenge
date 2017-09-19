@@ -10,7 +10,8 @@ Code Design and Architectural Solution
 	The framework made for this challenge was initially made with the MVP pattern in mind. 
   	It also abides in CLEAN Architecture with SOLID principles.
   
-Libraries Used:
+Libraries Used
+
 	• Kotlin
 	• Retrofit
 	• RxJava
