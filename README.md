@@ -11,15 +11,15 @@ Code Design and Architectural Solution
   	It also abides in CLEAN Architecture with SOLID principles.
   
 Libraries Used:
-	- Kotlin
-	- Retrofit
-	- RxJava
-	- Gson
+	• Kotlin
+	• Retrofit
+	• RxJava
+	• Gson
 	
 Requirements Fullfilled:
 	
-	•	User Story:
+	• User Story:
   	As a user, I want to be able to read random cat facts with a certain length. I also want to be able to share a cat fact, if I like it.
 
-	•	Solution Sketch:
+	• Solution Sketch:
   	RecyclerView displaying the data with a slider to set the maximum length of the random cat fact
