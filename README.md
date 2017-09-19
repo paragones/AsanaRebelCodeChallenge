@@ -24,3 +24,8 @@ Requirements Fullfilled:
 
 	• Solution Sketch:
   	RecyclerView displaying the data with a slider to set the maximum length of the random cat fact
+	
+Added Features:
+	
+	• Cat Facts: The user can click the up and down button to increase the cat facts he/she wanted to read. 
+	• Page: The user can click the up and down button to go to the previous page or next page.
