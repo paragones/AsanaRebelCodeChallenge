@@ -86,9 +86,5 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile "io.vrinda.kotlinpermissions:kotlinpermissions:$kotlinPermissionsVersion"
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    compile 'com.makeramen:roundedimageview:2.2.1'
-    compile 'com.squareup.picasso:picasso:2.5.2'
-    compile 'com.twotoasters.jazzylistview:library:1.2.1'
-    compile 'com.twotoasters.jazzylistview:library-recyclerview:1.2.1'
     provided 'javax.annotation:javax.annotation-api:1.2'
 }
