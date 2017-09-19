@@ -28,20 +28,7 @@ class NetworkModule {
         return Retrofit.Builder()
                 .baseUrl(BuildConfig.API_HOST)
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
-                .addConverterFactory(GsonConverterFactory.create(defaultGson()))
-//                .addConverterFactory(SimpleX)
-    }
-
-    private fun defaultGson(): Gson {
-        return GsonBuilder()
-                .registerTypeAdapter(Uri::class.java, UriDeserializer())
-                .create()
-    }
-
-    class UriDeserializer : JsonDeserializer<Uri> {
-        @Throws(JsonParseException::class)
-        override fun deserialize(src: JsonElement, srcType: Type,
-                                 context: JsonDeserializationContext): Uri = Uri.parse(src.asString)
+                .addConverterFactory(GsonConverterFactory.create())
     }
 }
 

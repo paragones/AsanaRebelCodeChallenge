@@ -27,13 +27,13 @@ class MainAdapter(private val catFacts: List<CatFact>,
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.content.text = catFacts[position].content
-        holder.seekBar.max = catFacts[position].length
+        holder.seekBar.max = catFacts[position].length - 1
         holder.seekBar.progress = catFacts[position].length
         holder.seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onStopTrackingTouch(seekBar: SeekBar) {}
             override fun onStartTrackingTouch(seekBar: SeekBar) {}
             override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
-                holder.content.text = catFacts[position].content.substring(0, progress)
+                if (progress != catFacts[position].length) holder.content.text = catFacts[position].content.substring(0, progress)
             }
         })
         holder.shareButton.setOnClickListener {

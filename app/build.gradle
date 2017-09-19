@@ -56,11 +56,6 @@ android {
         targetCompatibility JavaVersion.VERSION_1_7
     }
     sourceSets {
-        main {
-            java.srcDirs += 'src/main/kotlin'
-            test.java.srcDirs += 'src/test/kotlin'
-            androidTest.java.srcDirs += 'src/androidTest/kotlin'
-        }
         main.java.srcDirs += 'src/main/kotlin'
     }
     dexOptions {
@@ -86,11 +81,6 @@ dependencies {
         exclude module: 'okhttp'
     }
     compile "com.squareup.retrofit2:converter-gson:$retrofitVersion"
-    compile ("com.squareup.retrofit2:converter-simplexml:$retrofitVersion"){
-        exclude group: 'xpp3', module: 'xpp3'
-        exclude group: 'stax', module: 'stax-api'
-        exclude group: 'stax', module: 'stax'
-    }
     compile rootProject.ext.kotlinStdlib
     compile "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion"
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
