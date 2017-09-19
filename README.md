@@ -11,10 +11,10 @@ Code Design and Architectural Solution
   	It also abides in CLEAN Architecture with SOLID principles.
   
 Libraries Used:
-	-Kotlin
-	-Retrofit
-	-RxJava
-	-Gson
+	- Kotlin
+	- Retrofit
+	- RxJava
+	- Gson
 	
 Requirements Fullfilled:
 	
